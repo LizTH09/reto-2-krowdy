@@ -45,7 +45,6 @@ const SelectChanel = () => {
           label="Mensaje de texto"
         />
         <FormControlLabel
-          disabled
           control={
             <Checkbox
               checked={channels.whatsapp}
@@ -56,7 +55,8 @@ const SelectChanel = () => {
           label="Whatsapp"
         />
       </FormGroup>
-      <Button variant="contained" onClick={_handleToogleIsEmpty}>
+      <Button variant="contained" onClick={_handleToogleIsEmpty} 
+          disabled>
         Send message
       </Button>
       {isEmpty && <></>}
